@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Norse myths - Examen LM</title>
+        <link rel="shortcut icon" href="./imagenes/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./estilos/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+            
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="active">HOME</a>
+                <a href="#hero">INTRODUCCION</a>
+                <a href="#intro">HISTORY</a>
+                <a href="#galeria">GALLERY</a>
+                <a href="#footer">CONTACT</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                &#9776;
+                </a>
+            </div>
+
+
+            <section id="hero"> 
+                <p id="titulohero">NORSE MYTHS</p>
+            </section>
+
+
+            <section id="intro"> <!--INTRODUCCIÓN-->
+                <div class="titulos">
+                    BEYOND LEGENDS...
+                </div>
+
+                <div id="textointro">
+                        <img src="./imagenes/drakkar.jpg">
+                        <p>
+                            Come with us in a back journey to Scandinavia and experience the Viking Age!
+                        </p>
+
+                        <p>
+                            While Vikings engaged in invading and pillaging, their societies were complex and multifaceted and influential.
+                        </p>
+
+                        <p>
+                            They were skilled craftspeople, successful merchants, and diligent farmers with significant impact across western Europe and beyond.
+                        </p>
+
+                        <p>
+                            And one of the most fascinating and revealing facets of their culture is Norse Mythology, remaining nowadays as a source of knowledge about Vikings beliefs and attitude in life and death.
+                        </p>
+                </div>
+
+            </section>
+
+
+            <section id="galeria"> <!--GALERIA-->
+                <div class="titulos">
+                    GALLERY
+                </div>
+
+                <div id="grid4">
+                    <div class="col4">
+                        <div class="imgscol">
+                            <img src="./imagenes/odin-2.jpg">
+                        </div>
+
+                        <div class="textcol">
+                            <p>
+                                Odin, the Allfather
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col4">
+                        <div class="imgscol">
+                            <img src="./imagenes/yggdrasil-2.jpg">
+                        </div>
+
+                        <div class="textcol">
+                            <p>
+                                Yggdrasil
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col4">
+                        <div class="imgscol">
+                            <img src="./imagenes/valkyrie-2.jpg">
+                        </div>
+
+                        <div class="textcol">
+                            <p>
+                                Valkyries
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col4">
+                        <div class="imgscol">
+                            <img src="./imagenes/ragnarok.jpg">
+                        </div>
+
+                        <div class="textcol">
+                            <p>
+                                Ragnarok
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <footer id="footer">
+                <div id="textfot">
+                    <img src="./imagenes/magic-protection.png" alt="">
+                    <p>
+                        Author: Javier Miguel Martín Gallardo <br>
+                        Markup languages - IES Campanillas <br>
+                        December A.D. MMXXI <br>
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./javascripts/script.js"></script>
+
+    </body>
+</html>

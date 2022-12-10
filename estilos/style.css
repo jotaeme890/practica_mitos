@@ -1,0 +1,231 @@
+/***************************************************************/
+/*                       CSS DEL EXAMEN                        */
+/*             AUTOR: JAVIER MIGUEL MARTÍN GALLARDO            */
+/***************************************************************/
+
+@font-face {
+    font-family: texto;
+    src: url("../fuentes/BLKCHCRY.TTF");
+}
+
+@font-face {
+    font-family: titulo;
+    src: url("../fuentes/RunyTunesRevisitedNF.ttf");
+}
+
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.titulos{
+    font-family: titulo;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#wrapper{
+    background-color:  black;
+    margin: auto;
+    width: 90%;
+}
+
+
+/*********************  BARRA DE NAV  *************************/
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    font-family: titulo;
+    font-size: 2rem;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+/*********************  HERO SECTION  *************************/
+#hero{
+    background-image: url("../imagenes/norse-mithology-bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: 75%;
+    position: relative;
+}
+
+#titulohero{
+    font-family: titulo;
+    font-size: 4rem;
+    position: absolute;
+    top:-5%;
+    left:2%;
+}
+
+
+
+/*********************  ESTILO INTRO  *************************/
+#intro{
+    border-bottom: 1px solid  rgb(255, 233, 105);
+    padding-top: 5%;
+    color: white;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 3%;
+}
+
+#textointro p::first-letter{
+    font-size: 2.9rem;
+    color:  rgb(255, 233, 105);
+}
+
+#textointro{
+    margin-top: 2%;
+}
+
+#textointro p{
+    text-align: justify;
+    font-size: 1.8rem;
+    font-family: texto;
+}
+
+#textointro img{
+    float: left;
+    margin: 3%;
+    width: 50%;
+}
+
+
+
+/*********************  ESTILO GALER  *************************/
+#galeria{
+    padding-top: 5%;
+    color: white;
+    width: 95%;
+    margin: auto;
+}
+
+#grid4{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.col4{
+    border: 1px solid  rgb(255, 233, 105);
+}
+
+.imgscol{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.imgscol img{
+    width: 100%;
+}
+
+.textcol{
+    text-align: center;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.textcol p{
+    font-family: titulo;
+    font-size: 2rem;
+}
+
+
+/*********************  ESTILO FOOT  *************************/   
+footer{
+    background-color: rgb(178, 170, 121);
+    width: 100%;
+    margin-top: 3%;
+    padding-top: 2%;
+}
+
+#textfot{
+    margin: auto;
+    width: 40%;
+    text-align: left;
+    font-family: texto;
+    font-size: 1.1rem;
+}
+
+#textfot img{
+    width: 20%;
+    display: inline;
+    float: left;
+    margin-right: 5%;
+}
+
+
+/*********************  MEDIA QUERY  *************************/ 
+@media only screen and (width<=1000px) { 
+    #grid4{
+        grid-template-columns: 50% 50%;
+    }
+
+    #textointro img{
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (width<=600px) { 
+    #wrapper{
+        width: 100%;
+    }
+
+    #grid4{
+        grid-template-columns: 100%;
+    }
+
+    #textointro p{
+        text-align: left;
+        font-size: 1.7rem;
+    }
+
+    #titulohero{
+        left:5%;
+    }
+}
