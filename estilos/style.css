@@ -103,7 +103,7 @@ body{
 
 /*********************  ESTILO INTRO  *************************/
 #intro{
-    border-bottom: 1px solid  rgb(255, 233, 105);
+    border-bottom: 1px solid  #7B7543;
     padding-top: 5%;
     color: white;
     width: 80%;
@@ -113,7 +113,7 @@ body{
 
 #textointro p::first-letter{
     font-size: 2.9rem;
-    color:  rgb(255, 233, 105);
+    color:  #7B7543;
 }
 
 #textointro{
@@ -150,7 +150,7 @@ body{
 }
 
 .col4{
-    border: 1px solid  rgb(255, 233, 105);
+    border: 1px solid #7B7543;
 }
 
 .imgscol{
@@ -161,6 +161,12 @@ body{
 
 .imgscol img{
     width: 100%;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.imgscol img:hover{
+    opacity: 1;
 }
 
 .textcol{
@@ -183,21 +189,16 @@ footer{
     padding-top: 2%;
 }
 
-#textfot{
-    margin: auto;
-    width: 40%;
-    text-align: left;
+footer p{
     font-family: texto;
     font-size: 1.1rem;
+    margin-left: 40%;
 }
 
-#textfot img{
-    width: 20%;
-    display: inline;
-    float: left;
-    margin-right: 5%;
-}
 
+footer img{
+    width: 10%;
+}
 
 /*********************  MEDIA QUERY  *************************/ 
 @media only screen and (width<=1000px) { 
