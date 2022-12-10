@@ -87,7 +87,7 @@ body{
     background-image: url("../imagenes/norse-mithology-bg.jpg");
     height: 100vh;
     background-size: cover;
-    background-position: 75%;
+    background-position: 60%;
     position: relative;
 }
 
@@ -240,7 +240,7 @@ footer p {
     #titulohero{
         left:5%;
     }
-    
+
     footer img {
         margin-left: 5%;
         margin-right: 10%;
